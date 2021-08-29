@@ -1,0 +1,43 @@
+# Misc
+.DS_Store
+.idea
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore all logfiles and tempfiles.
+ror/tmp/*
+ror/tmp/
+ror/temp/*
+!ror/log/.keep
+!ror/tmp/.keep
+
+# Ignore pidfiles, but keep the directory.
+ror/tmp/pids/*
+!ror/tmp/pids/
+!ror/tmp/pids/.keep
+
+# Ignore uploaded files in development.
+ror/storage/*
+!ror/storage/.keep
+
+ror/public/assets
+ror/.byebug_history
+
+# Ignore master key for decrypting credentials and more.
+ror/config/master.key
+
+# General
+ror/public/packs
+ror/public/packs-test
+ror/node_modules
+ror/yarn-error.log
+ror/yarn-debug.log*
+ror/.yarn-integrity
+.env
+.dockerignore
+example_input.tab
+
+# Docker volumes
+.docker/volumes
+./.docker/volumes/
