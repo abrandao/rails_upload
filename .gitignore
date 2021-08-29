@@ -34,6 +34,7 @@ ror/node_modules
 ror/yarn-error.log
 ror/yarn-debug.log*
 ror/.yarn-integrity
+ror/log/development.log
 .env
 .dockerignore
 example_input.tab
