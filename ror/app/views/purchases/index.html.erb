@@ -1,8 +1,51 @@
-<h1>Purchases#index</h1>
-<p>Find me in app/views/purchases/index.html.erb</p>
+<div class="w3-container w3-margin w3-center w3-monospace w3-responsive w3-card-4">
 
-<button class="w3-button w3-black">Black</button>
-<button class="w3-button w3-khaki">Khaki</button>
-<button class="w3-button w3-yellow">Yellow</button>
-<button class="w3-button w3-red">Red</button>
-<button class="w3-button w3-purple">Purple</button>
+  <form action="/upload" method="POST" enctype="multipart/form-data" class="w3-container">
+    <input type="file" name="file" class="w3-button w3-section w3-blue w3-ripple">
+    <br>
+    <input type="submit" value="Upload" class="w3-button w3-section w3-blue w3-ripple">
+  </form>
+
+  <% @purchases.each do |name| %>
+      <b><%=  %></b>
+      <br />
+  <% end %>
+    
+  
+    <table class="w3-table-all w3-margin-right w3-margin-bottom">
+      <tr>
+        <th>Purchaser Name</th>
+        <th>Item Description</th>
+        <th>Item Price</th>
+        <th>Purchase Count</th>
+        <th>Merchant Address</th>
+        <th>Merchant Name</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+        <td>94</td>
+        <td>94</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>Adam</td>
+        <td>Johnson</td>
+        <td>67</td>
+        <td>67</td>
+        <td>67</td>
+        <td>67</td>
+      </tr>
+    </table>
+  
+
+</div>
