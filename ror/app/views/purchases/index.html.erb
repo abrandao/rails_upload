@@ -1,13 +1,13 @@
-<div class="w3-container w3-margin w3-center w3-monospace w3-responsive w3-card-4">
+<div class="w3-container w3-margin w3-center w3-monospace w3-responsive w3-card-4">  
 
-  <form action="/upload" method="POST" enctype="multipart/form-data" class="w3-container">
-    <input type="file" name="file" class="w3-button w3-section w3-blue w3-ripple">
+  <%= form_with url: "/uploads", multipart: true do |form| %>
+    <%= form.file_field :file, class: "w3-button w3-section w3-blue w3-ripple" %>
     <br>
-    <input type="submit" value="Upload" class="w3-button w3-section w3-blue w3-ripple">
-  </form>
+    <%= form.submit "Upload", class: "w3-button w3-section w3-blue w3-ripple" %>
+  <% end %>
 
-  <% @purchases.each do |name| %>
-      <b><%=  %></b>
+  <% @purchases.each do |pur| %>
+      <b><%= pur.count %></b>
       <br />
   <% end %>
     

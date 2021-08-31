@@ -45,6 +45,9 @@ group :development do
 
   # rspec-rails is a testing framework
   gem 'rspec-rails', '~> 5.0.0'
+
+  # Quick way to inspect your Rails database
+  gem 'rails_db', '>= 2.3.1'
 end
 
 group :test do
