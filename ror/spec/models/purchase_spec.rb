@@ -1,5 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe Purchase, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  
+  let(:purchase) do
+    create(:purchase,
+      items: 3.times.map { build(:item, price: Faker::Commerce.price) }
+    )
+  end
+  
 end
